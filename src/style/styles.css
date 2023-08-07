@@ -1,0 +1,282 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+    color: #fff;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    background: rgba(32, 41, 60, .8);
+    height: 5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    z-index: 2;
+}
+nav ul{
+
+    display: flex;
+
+
+}
+nav li{
+    display: flex;
+    margin: 0 1.2rem;
+    justify-content: space-between;
+    list-style: none;
+    padding: .8rem;
+    font-weight: bold;
+    font-size: .8rem;
+    
+}
+nav .resume{
+    background: #00b0b3;
+    border-radius: .4rem;
+    flex-direction: right;
+    cursor: pointer;
+    transition: .5s;
+}
+nav .resume:hover{
+    background: #0ddadd;
+}
+nav .resume a{
+    text-decoration: none;
+}
+
+nav .link a{
+    text-decoration: none;
+    background: 
+    linear-gradient(to right,#1bf2f4, #009699) 
+      bottom /var(--d, 1) 1.5px
+      no-repeat;
+      transition:0.9s;
+}
+nav .link a:hover{
+    --d: 100%;
+    /* color: #41fdef; */
+}
+
+/* ---------------------------------------- */
+
+
+
+.section{
+    height:100vh;
+    background: #20293c;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+}
+
+.section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    scroll-snap-align: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.model{
+    cursor:move;
+}
+
+/* ------HOME---- */
+.bg-obj{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+Canvas.bg{
+    cursor: pointer;
+}
+
+
+#home .text-con{
+    z-index: 1;
+    text-align: center;
+    width: 50%;
+
+}
+#home h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #66f8fb;
+    letter-spacing: .2rem;
+    font-size: 3rem;
+    margin: 1rem;
+    margin-top: 5rem;
+}
+#home p{
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+
+#home .obj-con-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    height: 35%;
+    width: 25%;
+}
+
+
+
+/* ------ABOUT------ */
+
+#about .obj-con{
+    height: 65%;
+    width: 45%;
+}
+#about .text-con{
+    text-align: center;
+    height: 35%;
+    width: 50%;
+}
+#about Canvas{
+    height: 100%;
+    width: 100%;
+    /* border-radius: 50%; */
+}
+#about h1{
+    color: #1bf2f4;
+    margin: 0 0 1rem 0;
+}
+#about p{
+    line-height: 1.5rem;
+}
+
+
+/* -------PROJECTS--------- */
+#projects h1{
+    margin: 1.5rem;
+    color: #66f8fb;
+
+}
+
+#projects .top, #projects .bottom{
+    display: flex;
+    flex-direction: row;
+}
+#projects .box{
+    display: flex;
+    align-items: center;
+    border: #000 solid 1px;
+    width: 25rem;
+    height: 10rem;
+    margin: 1rem;
+    padding: .5rem;
+    background: #0000002c;
+    box-shadow: 2.5px 2.5px 4px #000;
+    border-radius: 5%;
+
+}
+#projects .box-con{
+    display: flex;
+    flex-direction: column;
+}
+#projects img{
+    margin: 2px;
+}
+#projects a{
+    display: flex;
+    align-items: center;
+
+    font-size: .8rem;
+    font-weight: bold;
+}
+#projects .box-con2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#projects h4, #projects p{
+    text-align: center;
+    margin: .4rem;
+}
+#projects p{
+    font-size: .75rem;
+    line-height: 1.2rem;
+    
+}
+
+
+
+
+
+/* ------CONTACT------ */
+#contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+    position: relative;
+    z-index: 1;
+    height: 75%;
+}
+#contact h1{
+    margin: .5rem;
+    color: #66f8fb;
+}
+
+#contact input[type=text], #contact textarea{
+    padding-left: .5rem;
+    margin: .5rem 0;
+    height: 2rem;
+    width: 100%;
+    background: rgba(32, 41, 60, 0);
+    border: #ffffff90 .25px solid;
+}
+#contact input[type=submit]{
+    cursor: pointer;
+    background: rgba(32, 41, 60, 0);
+    border: #fff .25px solid;
+    padding: .5rem;
+    margin: 1rem;
+}
+#contact textarea{
+    height: 8rem;
+    width: 100%;
+    font-size: .9rem;
+    padding-left: .5rem;
+    line-height: 1.5rem;
+    resize: none; 
+}
+#contact .icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+
+}
+#contact a{
+    margin: 1rem;
+}
+#contact canvas{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%; 
+}
+
+.Toastify div {
+    color: #000;
+}
+.Toastify svg path{
+    fill: #000;
+}
