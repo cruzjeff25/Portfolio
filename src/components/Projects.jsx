@@ -1,14 +1,37 @@
-import React from "react";
+
+import React, {  useEffect, useRef } from 'react';
 import vcgec from '../img/vcgec.jpg';
 import github from '../img/github.png'
 import web from '../img/web.png'
 import contact from '../img/contact.jpg'
 import letspark from '../img/letspark.jpg'
 import portfolio from '../img/portfolio.jpg'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { gsap } from 'gsap'
+gsap.registerPlugin(ScrollTrigger)
 
 
 const Projects = () => {
-
+  const box1 = useRef(null);
+  const box2 = useRef(null);
+  const box3 = useRef(null);
+  const box4 = useRef(null);
+  useEffect(() => {
+    const el = box1.current;
+    gsap.fromTo(el, {opacity:0, x:-45}, {opacity: 1, x:0, duration: 1, delay: 0, scrollTrigger: {trigger: el, toggleActions: "restart none none none"}})
+  },[])
+  useEffect(() => {
+    const el = box2.current;
+    gsap.fromTo(el, {opacity:0, x:45}, {opacity: 1, x:0, duration: 1, delay: 0, scrollTrigger: {trigger: el, toggleActions: "restart none none none"}})
+  },[])
+  useEffect(() => {
+    const el = box3.current;
+    gsap.fromTo(el, {opacity:0, x:-45}, {opacity: 1, x:0, duration: 1, delay: 0, scrollTrigger: {trigger: el, toggleActions: "restart none none none"}})
+  },[])
+  useEffect(() => {
+    const el = box4.current;
+    gsap.fromTo(el, {opacity:0, x:45}, {opacity: 1, x:0, duration: 1, delay: 0, scrollTrigger: {trigger: el, toggleActions: "restart none none none"}})
+  },[])
 
   return (
     <section id='projects'>
@@ -17,7 +40,7 @@ const Projects = () => {
 
         <div className="top">
         {/* -----box 1------ */}
-          <div className="box">
+          <div ref={box1} className="box">
             <div className="box-con">
               <img src={vcgec} alt="vcgec" width={'200'}/>
             </div>
@@ -36,7 +59,7 @@ const Projects = () => {
           </div >
 
           {/* -----box 2------ */}
-          <div className="box">
+          <div ref={box2} className="box">
             <div className="box-con">
               <img src={contact} alt="vcgec" width={'200'}/>
             </div>
@@ -59,7 +82,7 @@ const Projects = () => {
 
         <div className="bottom">
           {/* ------box 3----- */}
-          <div className="box">
+          <div ref={box3} className="box">
            <div className="box-con">
               <img src={letspark} alt="vcgec" width={'200'}/>
             </div>
@@ -77,7 +100,7 @@ const Projects = () => {
             </div>
           </div>
         {/* ------box 4------- */}
-          <div className="box">
+          <div ref={box4}  className="box">
             <div className="box-con">
               <img src={portfolio} alt="vcgec" width={'200'}/>
             </div>
