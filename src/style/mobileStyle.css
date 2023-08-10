@@ -1,0 +1,125 @@
+
+
+@media(max-width: 1240px){
+    nav{
+        background: none;
+    }
+    nav ul{
+        display: none;
+    }
+    nav .burger {
+        display: block;
+    }
+
+
+    .nav_active{
+        height: 100vh;
+        transition: .5s;
+        justify-content: center;
+        background: rgba(32, 41, 60, 0.98);
+    }
+    .nav_active ul{
+        display: block;
+        right: unset;
+        text-align: center;
+
+    }
+    .nav_active ul li{
+        margin: 5rem;
+        animation: fadeIn 1.5s ease;
+        justify-content: center;
+    }
+    .nav_active .burger{
+        display: none;
+    }
+    .nav_active .close{
+        display: block;
+    }
+
+
+
+    .section .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        scroll-snap-align: center;
+        flex-direction: column;
+        position: relative;
+        background: #20293c;
+    }
+    
+
+
+    /* --------Home-------- */
+    #home .obj-con-bottom{
+        height: 25%;
+        width: 100%;
+    }
+    #home .text-con{
+        width: 85%;
+    }
+    #home h1{
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    #home h2{
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    #home p{
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    /* -------About------ */
+    #about .obj-con{
+        height: 40%;
+        width: 100%;
+    }
+    #about .text-con{
+        width: 85%;
+    }
+    #about p{
+        line-height: 2rem;
+    }
+
+
+
+    /* -----Projects----- */
+    #projects .top, #projects .bottom{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #projects .box{
+        width: 18rem;
+        margin: .45rem;
+        height: 8.5rem;
+    }
+
+    #projects img{
+        width: 110px;
+    }
+    #projects a img{
+        width: 14px;
+    }
+    #projects h4{
+        font-size: .85rem;
+    }
+
+    #projects .icon{
+        display: flex;
+        flex-direction: row;
+    }
+    #projects a{
+        margin: .5rem;
+        font-size: .7rem;
+    }
+
+    /* ----- Contact ------- */
+    #contact form{
+        width: 65%;
+    
+    }
+}

@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import gmail from '../img/gmail.png'
 import messenger from '../img/messenger.png'
-
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { gsap } from 'gsap'
+gsap.registerPlugin(ScrollTrigger)
 
 
 export const Contact = () => {
@@ -22,11 +24,17 @@ export const Contact = () => {
       e.target.reset()
   };
 
+  const opac = useRef(null);
+  useEffect(() => {
+    const el = opac.current;
+    gsap.fromTo(el, {opacity:.02}, {opacity: 1, duration: 2, delay:.2, scrollTrigger: {trigger: el, toggleActions: "restart none none none"}})
+  },[])
+
 
   return (
     <section id='contact'>
       <div className='container'>
-        <form  onSubmit={sendEmail}>
+        <form ref={opac} onSubmit={sendEmail}>
           <h1> Contact Me </h1>
           <input type='text' id='name' name="name" placeholder='Name' />
           <input type='text' id='email' name="email" placeholder='Email' required/>

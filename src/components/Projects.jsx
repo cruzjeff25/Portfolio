@@ -47,14 +47,16 @@ const Projects = () => {
             <div className="box-con2">
               <h4>VCGEC Website</h4>
               <p>A website for Valenzuela Government Employees Cooperative using ReactJs</p>
-              <a href="https://github.com/cruzjeff25/VCGEC" target='blank'>
-                <img src={github} alt="vcgec" width={'25px'} />
-                Github
-              </a>
-              <a href="https://vcgec.vercel.app" target='blank'>
-                <img src={web} alt="vcgec" width={'25px'}/>
-                Visit site
-              </a>
+              <div className='icon'>
+                <a href="https://github.com/cruzjeff25/VCGEC" target='blank'>
+                  <img src={github} alt="vcgec" width={'25px'} />
+                  Github
+                </a>
+                <a href="https://vcgec.vercel.app" target='blank'>
+                  <img src={web} alt="vcgec" width={'25px'}/>
+                  Visit site
+                </a>
+              </div>
             </div>
           </div >
 
@@ -66,14 +68,16 @@ const Projects = () => {
             <div className="box-con2">
               <h4>Contacts</h4>
               <p>A simple Create, Read, Update, and Delete System using PHP and MySQL</p>
-              <a href="https://github.com/cruzjeff25/Contacts" target='blank'>
-                <img src={github} alt="vcgec" width={'25px'} />
-                Github
-              </a>
-              <a href="https://contactscrud.000webhostapp.com/" target='blank'>
-                <img src={web} alt="vcgec" width={'25px'}/>
-                Visit site
-              </a>
+              <div className="icon">
+                <a href="https://github.com/cruzjeff25/Contacts" target='blank'>
+                  <img src={github} alt="vcgec" width={'25px'} />
+                  Github
+                </a>
+                <a href="https://contactscrud.000webhostapp.com/" target='blank'>
+                  <img src={web} alt="vcgec" width={'25px'}/>
+                  Visit site
+                </a>
+              </div>
             </div>
           </div>
 
@@ -89,14 +93,16 @@ const Projects = () => {
             <div className="box-con2">
               <h4>Let's Park!</h4>
               <p>A landing and admin website for Let's Park! mobile app using ReactJs and Firebase</p>
-              <a href="https://github.com/cruzjeff25/LetsPark" target='blank'>
-                <img src={github} alt="vcgec" width={'25px'} />
-                Github
-              </a>
-              <a href="https://letspark.vercel.app/" target='blank'>
-                <img src={web} alt="vcgec" width={'25px'}/>
-                Visit site
-              </a>
+              <div className="icon">
+                <a href="https://github.com/cruzjeff25/LetsPark" target='blank'>
+                  <img src={github} alt="vcgec" width={'25px'} />
+                  Github
+                </a>
+                <a href="https://letspark.vercel.app/" target='blank'>
+                  <img src={web} alt="vcgec" width={'25px'}/>
+                  Visit site
+                </a>
+              </div>
             </div>
           </div>
         {/* ------box 4------- */}
@@ -107,10 +113,13 @@ const Projects = () => {
             <div className="box-con2">
               <h4>Portfolio</h4>
               <p>This website, using ReactJs and ThreeJs</p>
+              <div className="icon">
+              
               <a href="https://github.com/cruzjeff25/VCGEC" target='blank'>
                 <img src={github} alt="vcgec" width={'25px'} />
                 Github
               </a>
+              </div>
             </div>
           </div>
         </div>

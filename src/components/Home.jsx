@@ -9,10 +9,10 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 const Home  = () => {
-  const zoom = useRef(null);
+  const opac = useRef(null);
   useEffect(() => {
-    const el = zoom.current;
-    gsap.fromTo(el, {opacity:0}, {opacity: 1, duration: 1.5, delay: .2, scrollTrigger: {trigger: el, toggleActions: "restart reset restart reset"}})
+    const el = opac.current;
+    gsap.fromTo(el, {opacity:0}, {opacity: 1, duration: 2.5, delay: 0, scrollTrigger: {trigger: el, toggleActions: "play reset restart reset"}})
   },[])
 
   return (
@@ -21,7 +21,7 @@ const Home  = () => {
         
         <div className='text-con'>
           <h1 >Jeffrey Cruz</h1>
-          <h2 ref={zoom}>Web Developer </h2>
+          <h2 >Web Developer </h2>
           &nbsp;
           &nbsp;
           &nbsp;
@@ -29,9 +29,9 @@ const Home  = () => {
         </div>
 
         <div className='obj-con-bottom'>
-          <Canvas className='model' camera={{ position: [0, 8, 22], fov: 45 } } > 
+          <Canvas ref={opac} className='model' camera={{ position: [0, 8, 22], fov: 45 } } > 
           <fog attach="fog" args={['#20293c', 19, 38] } />
-            <ambientLight args={['#fff', .5]}/>
+            <ambientLight args={['#ffe7d9', .5]}/>
             <directionalLight position={[1,2,1] }/>
 
             {/* <Stage> */}
