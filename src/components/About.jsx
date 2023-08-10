@@ -12,7 +12,7 @@ const About = () => {
   const opac = useRef(null);
   useEffect(() => {
     const el = opac.current;
-    gsap.fromTo(el, {opacity:.05}, {opacity: 1, duration: 2.5, delay: .2, scrollTrigger: {trigger: el, toggleActions:"restart none none reset"}})
+    gsap.fromTo(el, {opacity: 0 , display: "none"}, {opacity: 1, display: "block",  duration: 2.5, delay: .1, scrollTrigger: {trigger: el, toggleActions:"play reset restart reset"}})
   },[])
 
   return (
