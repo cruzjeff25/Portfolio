@@ -1,11 +1,14 @@
 
 
-@media(max-width: 1240px){
+@media(max-width: 950px){
     nav{
         background: none;
+        transform: translateY(0);
+        transition: .5s ease;
     }
     nav ul{
         display: none;
+
     }
     nav .burger {
         display: block;
@@ -14,9 +17,8 @@
 
     .nav_active{
         height: 100vh;
-        transition: .5s;
         justify-content: center;
-        background: rgba(32, 41, 60, 0.98);
+        background: rgba(32, 41, 60, 0.99);
     }
     .nav_active ul{
         display: block;
@@ -26,7 +28,6 @@
     }
     .nav_active ul li{
         margin: 5rem;
-        animation: fadeIn 1.5s ease;
         justify-content: center;
     }
     .nav_active .burger{

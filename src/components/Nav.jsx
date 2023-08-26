@@ -3,10 +3,13 @@ import resume from '../Resume.pdf'
 
 const Nav = () => {
   const [active, setActive] = useState(false);
+  const toggleNavbar = () => {
+    setActive(!active)
+  }
 
   return (
     <nav className={active ? "nav_active" : "nav"}>
-        <ul onClick={() => setActive(false)}>
+        <ul onClick={toggleNavbar}>
             <li className='link'> <a href='#about'>ABOUT</a></li>
             <li className='link'> <a href='#projects'>PROJECTS</a></li>
             <li className='link'> <a href='#contact'>CONTACT</a></li>
@@ -14,13 +17,13 @@ const Nav = () => {
 
 
         </ul>
-        <div className='burger' onClick={() => setActive(true) } >
+        <div className='burger' onClick={toggleNavbar} >
           <span className='bar'></span>
           <span className='bar'></span>
           <span className='bar'></span>
         </div>
 
-        <div className='close' onClick={() => setActive(false) } >
+        <div className='close' onClick={toggleNavbar} >
           <span className='barClose'></span>
           <span className='barClose'></span>
         </div>

@@ -21,11 +21,11 @@ const Home  = () => {
         
         <div className='text-con'>
           <h1 >Jeffrey Cruz</h1>
-          <h2 >Web Developer </h2>
+          <h3 >Web Developer/Designer</h3>
           &nbsp;
           &nbsp;
           &nbsp;
-          <p >Hi! I'm thrilled to introduce myself as a passionate developer with a strong foundation in HTML, CSS, and JavaScript. I specialize in creating a functional, visually appealing, interactive, and user-friendly website.</p>  
+          <p >I enjoy creating functional, visually appealing, and user-friendly websites.</p>  
         </div>
 
         <div className='obj-con-bottom'>

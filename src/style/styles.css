@@ -4,7 +4,7 @@
     padding: 0;
     border: 0;
     scroll-behavior: smooth;
-    color: #fff;
+    color: #ffffffe9;
     -ms-overflow-style: none;
     scrollbar-width: none; 
     
@@ -154,7 +154,7 @@ Canvas.bg{
     font-size: 3rem;
     margin: 1rem;
     margin-top: 5rem;
-    text-shadow: 0 5px 8px #050505fc;
+    /* text-shadow: 0 5px 8px #050505fc; */
 }
 #home p{
     text-align: center;
