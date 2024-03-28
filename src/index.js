@@ -4,7 +4,7 @@ import './style/styles.css'
 import './style/mobileStyle.css'
 import Home from './components/Home'
 import About from './components/About'
-import Projects from './components/Projects'
+import Works from './components/Works'
 import Contact from './components/Contact'
 import Nav from './components/Nav'
 
@@ -16,7 +16,7 @@ function App(){
             <Nav/>
             <Home/>
             <About/>
-            <Projects/>
+            <Works/>
             <Contact/>
         </div>
     )

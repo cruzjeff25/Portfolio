@@ -88,7 +88,10 @@
 
 
     /* -----Projects----- */
-    #projects .top, #projects .bottom{
+    .section #works{
+        height:260vh;
+    }
+    #projects .top, #projects .bottom, #projects .designs{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -116,6 +119,15 @@
     #projects a{
         margin: .5rem;
         font-size: .7rem;
+    }
+
+    #projects .designs .design-con{
+        flex-direction: column;
+    }
+
+    #projects .iframe{
+        height: 220px;
+        width: 300px;
     }
 
     /* ----- Contact ------- */

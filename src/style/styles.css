@@ -114,6 +114,9 @@ nav .close .barClose{
     scroll-behavior: smooth;
     overflow-y: auto; */
 }
+.section #works{
+    height:200vh;
+}
 
 .section .container{
     display: flex;
@@ -151,7 +154,7 @@ Canvas.bg{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #66f8fb;
     letter-spacing: .2rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 1rem;
     margin-top: 5rem;
     /* text-shadow: 0 5px 8px #050505fc; */
@@ -198,11 +201,14 @@ Canvas.bg{
 }
 
 
-/* -------PROJECTS--------- */
+/* -------WORKS--------- */
 #projects h1{
     margin: 1.5rem;
     color: #66f8fb;
+}
 
+#projects .subtitle{
+    margin: 1.5rem 0rem .5rem 0rem;
 }
 
 #projects .top, #projects .bottom{
@@ -213,6 +219,7 @@ Canvas.bg{
     display: flex;
     align-items: center;
     border: #ffffff49 solid 1px;
+    border-radius: .5rem;
     width: 25rem;
     height: 10rem;
     margin: 1rem;
@@ -253,6 +260,29 @@ Canvas.bg{
     line-height: 1.2rem;
     color: #ffffffd2;
     
+}
+
+#projects .designs{
+    justify-content: center;
+}
+#projects .designs p{
+    font-size: .8rem;
+}
+#projects .designs .link{
+    font-size: 1rem;
+    justify-content: center;
+}
+#projects .designs .design-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#projects .designs .iframe{
+    margin: 1rem 2rem;
+    border: #ffffff49 solid 1px;
+    border-radius: .5rem;
+    box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.2);
 }
 
 

@@ -42,7 +42,7 @@ const About = () => {
       <div className='text-con'>
        <h1 >About Me</h1>
        <p > 
-       I am 22 years old, currently residing in Valenzuela City, and I am a graduate of Bachelor of Science in Information Technology at Pamantasan ng Lungsod ng Valenzuela. Besides coding, I also love to workout at the gym, playing games, and being around my dogs.
+       I'm 23yrs old, living in Valenzuela City, Philippines 📍, with a degree in Information Technology from Pamantasan ng Lungsod ng Valenzuela 🎓. Apart from coding and design, enjoy working out, gaming, and spending time with my dogs
        </p>
       </div>
 

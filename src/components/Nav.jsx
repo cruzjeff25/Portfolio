@@ -11,7 +11,7 @@ const Nav = () => {
     <nav className={active ? "nav_active" : "nav"}>
         <ul onClick={toggleNavbar}>
             <li className='link'> <a href='#about'>ABOUT</a></li>
-            <li className='link'> <a href='#projects'>PROJECTS</a></li>
+            <li className='link'> <a href='#projects'>WORKS</a></li>
             <li className='link'> <a href='#contact'>CONTACT</a></li>
             <li className='resume'><a href={resume} target="_blank" rel='noreferrer' download>RESUME</a></li>
 
