@@ -151,7 +151,7 @@ const Works = () => {
         <h3 className='subtitle' >Graphic Design</h3>
 
         <div className='designs'>
-        <p >View More:<a className='link' href="https://www.behance.net/cruzjeffrey" target='_blank'>@behance.net/cruzjeffrey</a></p>
+        <p >View More:<a className='link' href="https://www.behance.net/cruzjeffrey" target='_blank'  rel="noreferrer">@behance.net/cruzjeffrey</a></p>
 
           <div className='design-con'>
             <iframe ref={design1} className='iframe' src="https://www.behance.net/embed/project/194968487?ilo0=1" height="265" width="360" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
