@@ -161,7 +161,7 @@ const Works = () => {
           <div className='design-con'>
             <iframe ref={design3} className='iframe' src="https://www.behance.net/embed/project/194653385?ilo0=1" height="265" width="360" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
 
-            <iframe ref={design4} className='iframe' src="https://www.behance.net/embed/project/194967985?ilo0=1" height="265" width="360" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+            <iframe ref={design4} className='iframe' src="https://www.behance.net/embed/project/197606133?ilo0=1" height="265" width="360" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
           </div>
 
         </div>
