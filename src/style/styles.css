@@ -299,9 +299,11 @@ Canvas.bg{
     position: relative;
     z-index: 1;
     border: #ffffffc6 solid .5px;
+    border-radius: .5rem;
     padding: 2rem;
     width: 20%;
-    margin-top: 6rem;
+    margin-top: 8rem;
+    
     box-shadow: 0 -12px 24px rgba(255, 255, 255, 0.511);
 
 }
@@ -317,11 +319,13 @@ Canvas.bg{
     width: 100%;
     background: rgba(32, 41, 60, 0);
     border: #ffffffc6 .25px solid;
+    border-radius: .2rem;
 }
 #contact input[type=submit]{
     cursor: pointer;
     background: rgba(32, 41, 60, 0);
     border: #fff .25px solid;
+    border-radius: .2rem;
     padding: .5rem;
     margin: 1rem;
 }

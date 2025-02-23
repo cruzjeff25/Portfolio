@@ -3,7 +3,7 @@ import React, {  useEffect, useRef } from 'react';
 import vcgec from '../img/vcgec.jpg';
 import github from '../img/github.png'
 import web from '../img/web.png'
-import contact from '../img/contact.jpg'
+import ceo from '../img/ceo.png'
 import letspark from '../img/letspark.jpg'
 import portfolio from '../img/portfolio.jpg'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -61,7 +61,7 @@ const Works = () => {
     <section id='projects'>
       <div id='works' className='container'>
         <h1>Works</h1> 
-        <h3 className='subtitle' >Web Development</h3>
+        <h3 className='subtitle' >Web Dev/Designs</h3>
         <div className="top">
         {/* -----box 1------ */}
           <div ref={box1} className="box">
@@ -87,17 +87,17 @@ const Works = () => {
           {/* -----box 2------ */}
           <div ref={box2} className="box">
             <div className="box-con">
-              <img src={contact} alt="vcgec" width={'200'}/>
+              <img src={ceo} alt="vcgec" width={'200'}/>
             </div>
             <div className="box-con2">
-              <h4>Contacts</h4>
-              <p>A simple Create, Read, Update, and Delete System using PHP and MySQL</p>
+              <h4>CEO Build</h4>
+              <p>A Static website for CEO Build Brand</p>
               <div className="icon">
-                <a href="https://github.com/cruzjeff25/Contacts" target='blank'>
+                <a href="https://github.com/cruzjeff25/CEO-Build-Website" target='blank'>
                   <img src={github} alt="vcgec" width={'25px'} />
                   Github
                 </a>
-                <a href="https://contactscrud.000webhostapp.com/" target='blank'>
+                <a href="https://ceobuildcomputers.com/" target='blank'>
                   <img src={web} alt="vcgec" width={'25px'}/>
                   Visit site
                 </a>
@@ -151,18 +151,20 @@ const Works = () => {
         <h3 className='subtitle' >Graphic Design</h3>
 
         <div className='designs'>
-        <p >View More:<a className='link' href="https://www.behance.net/cruzjeffrey" target='_blank'  rel="noreferrer">@behance.net/cruzjeffrey</a></p>
 
           <div className='design-con'>
-            <iframe ref={design1} className='iframe' src="https://www.behance.net/embed/project/194968487?ilo0=1" height="265" width="360" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+             <iframe ref={design1} className='iframe' src="https://www.behance.net/embed/project/211537517?ilo0=1" height="265" width="360" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
 
-            <iframe ref={design2} className='iframe' src="https://www.behance.net/embed/project/194965943?ilo0=1" height="265" width="360" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+             <iframe ref={design2} className='iframe' src="https://www.behance.net/embed/project/219941919?ilo0=1" height="265" width="360" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+
           </div>
           <div className='design-con'>
             <iframe ref={design3} className='iframe' src="https://www.behance.net/embed/project/194653385?ilo0=1" height="265" width="360" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
 
             <iframe ref={design4} className='iframe' src="https://www.behance.net/embed/project/197606133?ilo0=1" height="265" width="360" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
           </div>
+
+          <p >View More:<a className='link' href="https://www.behance.net/cruzjeffrey" target='_blank'  rel="noreferrer">@behance.net/cruzjeffrey</a></p>
 
         </div>
 
